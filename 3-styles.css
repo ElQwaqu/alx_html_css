@@ -1,0 +1,526 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: white;
+}
+
+/* Header Section */
+.header {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/headphones_hero_1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Navigation */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    position: relative;
+    z-index: 10;
+}
+
+.logo img {
+    height: 32px;
+    width: auto;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: lowercase;
+    transition: color 0.3s ease;
+}
+
+.nav-menu a:hover,
+.nav-menu a:active {
+    color: #FF6565;
+}
+
+/* Hamburger Menu */
+.menu-toggle {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.hamburger-line {
+    width: 20px;
+    height: 2px;
+    background-color: white;
+    margin: 2px 0;
+    transition: 0.3s;
+}
+
+/* Hero Content */
+.hero-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.hero-content h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+.hero-subtitle {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+
+.cta-button {
+    background-color: #FF6565;
+    color: white;
+    border: none;
+    padding: 13px 31px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 22px;
+    cursor: pointer;
+    margin-bottom: 65px;
+    transition: all 0.3s ease;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.5);
+}
+
+.cta-button:hover,
+.cta-button:active {
+    opacity: 0.9;
+}
+
+.hero-description {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 637px;
+    opacity: 0.9;
+    margin-bottom: 100px;
+}
+
+/* What We Do Section */
+.what-we-do {
+    background-color: white;
+    padding: 110px 0;
+    color: #071629;
+    width: 100%;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.what-we-do h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #071629;
+}
+
+.section-description {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 637px;
+    margin: 0 auto 95px;
+    color: #071629;
+}
+
+.services {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.service-item {
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+}
+
+.service-icon {
+    margin-bottom: 20px;
+}
+
+.service-icon span {
+    font-size: 94px;
+    color: #FF6565;
+}
+
+.service-icon img {
+    width: 94px;
+    height: 94px;
+}
+
+.service-item h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #071629;
+}
+
+.service-item p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #071629;
+    max-width: 207px;
+    margin: 0 auto;
+}
+
+/* Our Results Section */
+.our-results {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/headphones_hero_2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 110px 0;
+    color: white;
+    width: 100%;
+}
+
+.our-results .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.our-results h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.our-results .section-description {
+    color: white;
+    margin-bottom: 95px;
+}
+
+.results {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.result-item {
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+}
+
+.result-pentagon {
+    width: 190px;
+    height: 190px;
+    background-color: #FF6565;
+    position: relative;
+    margin: 0 auto;
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.result-percentage {
+    font-size: 46px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.result-text {
+    font-size: 14px;
+    color: white;
+    margin: 0;
+    max-width: 100px;
+}
+
+/* Contact Us Section */
+.contact-us {
+    background-color: white;
+    padding: 110px 0;
+    color: #071629;
+    width: 100%;
+}
+
+.contact-us h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 55px;
+    color: #071629;
+}
+
+.contact-form {
+    max-width: 335px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 45px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #071629;
+    background: transparent;
+    padding: 15px 0;
+    font-size: 14px;
+    color: #071629;
+    outline: none;
+    font-family: Arial, sans-serif;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #071629;
+    font-weight: 600;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-bottom: 2px solid #FF6565;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 40px;
+}
+
+.contact-form .cta-button {
+    display: block;
+    margin: 55px auto 0;
+    padding: 13px 31px;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .nav {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        position: relative;
+    }
+
+    /* Hide navigation menu by default on mobile */
+    .nav-menu {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.95);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        z-index: 999;
+        list-style: none;
+    }
+
+    /* Show hamburger menu on mobile */
+    .hamburger {
+        display: flex;
+        z-index: 1000;
+    }
+
+    .nav-menu li {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all 0.3s ease 0.1s;
+    }
+
+    .nav-menu a {
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    /* Show menu when hamburger is clicked */
+    .menu-toggle:checked~.nav-menu {
+        display: flex;
+    }
+
+    .menu-toggle:checked~.nav-menu li {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    /* Hamburger animation */
+    .menu-toggle:checked~.hamburger .hamburger-line:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .menu-toggle:checked~.hamburger .hamburger-line:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle:checked~.hamburger .hamburger-line:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+    }
+
+    .hero-content h1 {
+        font-size: 24px;
+    }
+
+    .hero-content {
+        padding: 0 20px;
+    }
+
+    .hero-description {
+        font-size: 14px;
+    }
+
+    /* What We Do Section Mobile */
+    .what-we-do {
+        padding: 60px 0;
+    }
+
+    .what-we-do h2 {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    .section-description {
+        font-size: 14px;
+        margin-bottom: 60px;
+    }
+
+    .services {
+        flex-direction: column;
+        gap: 60px;
+        align-items: center;
+    }
+
+    .service-item {
+        max-width: 300px;
+    }
+
+    .service-icon span {
+        font-size: 80px;
+    }
+
+    .service-icon img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .service-item h3 {
+        font-size: 16px;
+    }
+
+    .service-item p {
+        font-size: 12px;
+    }
+
+    /* Our Results Section Mobile */
+    .our-results {
+        padding: 60px 0;
+    }
+
+    .our-results h2 {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    .results {
+        flex-direction: column;
+        gap: 60px;
+        align-items: center;
+    }
+
+    .result-item {
+        max-width: 300px;
+    }
+
+    .result-pentagon {
+        width: 150px;
+        height: 150px;
+    }
+
+    .result-percentage {
+        font-size: 36px;
+    }
+
+    .result-text {
+        font-size: 12px;
+    }
+
+    /* Contact Us Section Mobile */
+    .contact-us {
+        padding: 60px 0;
+    }
+
+    .contact-us h2 {
+        font-size: 28px;
+        margin-bottom: 40px;
+    }
+
+    .contact-form {
+        max-width: 300px;
+    }
+
+    .form-group {
+        margin-bottom: 35px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 12px;
+        padding: 12px 0;
+    }
+
+    .contact-form .cta-button {
+        margin-top: 40px;
+        font-size: 12px;
+        padding: 11px 25px;
+    }
+}
